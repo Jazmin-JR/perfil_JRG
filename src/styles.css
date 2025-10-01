@@ -1,0 +1,37 @@
+:root{
+  --bg: #f7fafc;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --radius: 12px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#111}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+
+.header{background:transparent;padding:1rem 0}
+.header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;font-size:1.25rem}
+.header nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+.hero{padding:2rem 1rem}
+.hero-inner{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+.profile-pic{width:160px;height:160px;border-radius:16px;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+.bio{max-width:700px}
+.bio h2{margin-top:0}
+.hero-actions{margin-top:1rem;display:flex;gap:0.75rem}
+button{background:var(--accent);color:white;padding:0.6rem 1rem;border-radius:8px;border:0;cursor:pointer}
+.download-cv{display:inline-block;padding:0.6rem 1rem;border-radius:8px;border:1px solid #ddd;text-decoration:none;color:var(--muted)}
+
+.hobbies{padding:1rem}
+.hobbies h2{margin-left:1rem}
+.hobby-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;padding:1rem}
+.hobby-card{background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,15,25,0.04)}
+.hobby-card h3{margin-top:0}
+.footer{display:flex;justify-content:space-between;align-items:center;padding:1rem;border-top:1px solid #eee;background:white;margin-top:2rem}
+
+@media (max-width:640px){
+  .hero-inner{flex-direction:column;align-items:flex-start}
+  .profile-pic{width:120px;height:120px}
+}
