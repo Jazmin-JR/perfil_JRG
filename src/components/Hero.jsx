@@ -4,7 +4,7 @@ export default function Hero({ onShare }){
   return (
     <section id="about" className="hero">
       <div className="hero-inner">
-        <img src="/public/foto_titulo.png" alt="Foto de Tu Nombre" className="profile-pic" />
+        <img src="/public/foto_titulo.jpg" alt="Foto de Tu Nombre" className="profile-pic" />
         <div className="bio">
           <h2>¿Quién soy?</h2>
           <p>Hola — soy <strong>Jazmín Roldán Guzmán</strong>, Soy programadora apasionada y motivada, con experiencia en proyectos académicos y sólidos conocimientos en desarrollo web y móvil. 
